@@ -191,3 +191,20 @@ i.bi {
     font-size: 11px;
     color: #444444;
 }
+
+footer.border-top{
+    border-top-color: #333232 !important;
+}
+
+.footer-text{
+     font-family: var(--bs-font-sans-serif);
+    background-color: #121315;
+    color: #444444;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+}
+
+.col-md-4{
+    width:auto;
+}
