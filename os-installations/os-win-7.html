@@ -124,7 +124,7 @@
 
 </div>
 <p class="caption mt-2">
-    Source: YouTube - How to use VirtualBox (Kevin Stratvert)
+    Source: YouTube - Installing Windows 7 (VirtualBox)
   </p>
        
       </div>
@@ -155,9 +155,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Windows 7"), set Type to "Microsoft Windows", and select the appropriate Windows 7 version template (32-bit or 64-bit).</li>
+  <li>Allocate at least 1 GB of RAM for 32-bit or 2 GB for 64-bit, as described in the summary above.</li>
+  <li>Assign 1 to 2 CPU cores under Settings → System → Processor.</li>
+  <li>Create a new VDI virtual hard disk, dynamically allocated, with a size between 16 GB and 25 GB.</li>
+  <li>Open Settings → Storage and attach your Windows 7 ISO to the virtual optical drive.</li>
+  <li>Optionally increase Video Memory and enable 3D Acceleration under Settings → Display for smoother visuals.</li>
+  <li>Start the VM and press any key when prompted to boot from the DVD/ISO.</li>
+  <li>Follow the installer to choose your language, accept the license, and create/format a partition using NTFS.</li>
+  <li>Let the installation complete and reboot into the Windows 7 desktop.</li>
+  <li>After the first login, eject the ISO and install VirtualBox Guest Additions to improve resolution, mouse integration, and shared clipboard.</li>
     </ol>
   </div>
 </fieldset>

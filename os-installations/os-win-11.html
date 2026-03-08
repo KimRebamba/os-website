@@ -115,8 +115,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zmcoNJVW7xY?si=HYaBDWVARNXUbDNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -149,9 +148,18 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Ensure hardware virtualization (Intel VT-x/AMD-V) is enabled in your host BIOS/UEFI before starting.</li>
+  <li>Open VirtualBox 7.0+ and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Windows 11"), set Type to "Microsoft Windows", and choose the "Windows 11 (64-bit)" template so EFI, Secure Boot, and TPM are configured automatically.</li>
+  <li>Allocate at least 4 GB of RAM (8 GB recommended) and assign 2 to 4 CPU cores under Settings → System → Processor.</li>
+  <li>Create a new VDI virtual hard disk, dynamically allocated, with a capacity between 64 GB and 80 GB.</li>
+  <li>Open Settings → Display, enable 3D Acceleration, and set Video Memory to 128 MB or higher.</li>
+  <li>In Settings → Storage, attach your Windows 11 ISO to the virtual optical drive.</li>
+  <li>Start the VM and boot from the ISO to launch the Windows 11 installer.</li>
+  <li>Follow the setup wizard to choose your language, edition, and installation type, then create and format an NTFS partition.</li>
+  <li>If the installer checks for TPM or Secure Boot, confirm that the VirtualBox VM is using EFI with the virtual TPM device enabled (handled by the template).</li>
+  <li>Complete the online/offline account setup, region, and privacy settings to reach the Windows 11 desktop.</li>
+  <li>After installation, remove the ISO from the virtual drive and install VirtualBox Guest Additions for smoother graphics and input integration.</li>
     </ol>
   </div>
 </fieldset>

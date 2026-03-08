@@ -115,8 +115,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W4uTKEl-8Qg?si=MiNXX9oNh-gJPd9i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -149,9 +148,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Windows 98 SE"), set Type to "Microsoft Windows", and pick the closest Windows 98 or legacy template.</li>
+  <li>Assign between 128 MB and 256 MB of RAM, avoiding values above 512 MB to prevent "Out of Memory" issues.</li>
+  <li>Create a new VDI virtual hard disk, dynamically allocated, with a size between 2 GB and 8 GB.</li>
+  <li>Open Settings → System and ensure the optical drive is first in the boot order so the VM can boot from the CD.</li>
+  <li>In Settings → Storage, attach your Windows 98 ISO to the virtual optical drive.</li>
+  <li>Start the VM and boot from the CD (or boot floppy, if you are using one).</li>
+  <li>Use the setup tools to create and format a primary partition (FAT32 is typical for Windows 98 SE).</li>
+  <li>Run the Windows 98 setup program from the CD and follow the prompts to copy files and configure regional and keyboard settings.</li>
+  <li>Allow the VM to reboot several times while Windows completes hardware detection and driver installation.</li>
+  <li>Once installation is done, remove the ISO from the virtual drive so the VM boots directly into Windows 98.</li>
     </ol>
   </div>
 </fieldset>

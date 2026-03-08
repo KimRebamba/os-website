@@ -115,8 +115,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W4MjYOjD-oA?si=9G-0ujJomQcJcDUG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -149,9 +148,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Win2003 Server"), set Type to "Microsoft Windows", and select the "Windows 2003" version template.</li>
+  <li>Assign between 512 MB and 1 GB of RAM (more if you plan to run several roles) and at least 1 CPU core.</li>
+  <li>Create a new VDI virtual hard disk, dynamically allocated, with a size between 10 GB and 20 GB.</li>
+  <li>Open Settings → Storage and attach your Windows Server 2003 ISO to the virtual optical drive.</li>
+  <li>Ensure the optical drive is first in the boot order under Settings → System.</li>
+  <li>Start the VM and boot from the CD to begin Windows setup.</li>
+  <li>Create and format a partition on the virtual disk using NTFS when prompted.</li>
+  <li>Continue through the installation wizard to configure the administrator password, regional settings, and networking.</li>
+  <li>After installation, use the Manage Your Server or Server Manager tools to add roles such as Active Directory, DNS, or DHCP as needed.</li>
+  <li>When you are satisfied with the base configuration, take a VM snapshot so you can return to a clean server state for lab work.</li>
     </ol>
   </div>
 </fieldset>

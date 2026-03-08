@@ -116,8 +116,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HK1-sa6PbzQ?si=fVFaFseSX_HwPTFD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -150,9 +149,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to start creating a virtual machine.</li>
+  <li>Give the VM a name such as "Windows Me", set Type to "Microsoft Windows", and choose the closest Windows Me or Windows 98 template.</li>
+  <li>Assign between 128 MB and 256 MB of RAM, staying at or below 512 MB for best compatibility.</li>
+  <li>Create a new virtual hard disk (VDI, dynamically allocated) with a capacity between 2 GB and 8 GB.</li>
+  <li>Open Settings → System and ensure the optical drive is at the top of the boot order.</li>
+  <li>In Settings → Storage, attach your Windows Me ISO file to the virtual optical drive.</li>
+  <li>Click "Start" to boot the VM and begin the Windows Me setup from the CD.</li>
+  <li>Use the partitioning tools to create and format a primary partition (typically FAT32) on the virtual disk.</li>
+  <li>Follow the installer prompts to copy files, configure your time zone, and set a computer name.</li>
+  <li>Allow the VM to reboot as many times as needed until it reaches the Windows Me desktop.</li>
+  <li>Detach the ISO from the virtual drive once installation is complete so the VM boots only from the virtual hard disk.</li>
     </ol>
   </div>
 </fieldset>

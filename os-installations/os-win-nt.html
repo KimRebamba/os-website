@@ -116,8 +116,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i3zDB4CbgL0?si=t9Skd4scs3ghZjI_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -149,9 +148,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Windows NT 4.0"), set Type to "Microsoft Windows", and choose the "Windows NT 4" version template if available.</li>
+  <li>Assign between 64 MB and 128 MB of RAM and keep the VM to a single CPU core for stability.</li>
+  <li>Create a new virtual hard disk (VDI, dynamically allocated) with a size between 2 GB and 4 GB.</li>
+  <li>Open Settings → Storage and attach your Windows NT 4.0 ISO (or CD image) to the virtual optical drive.</li>
+  <li>In Settings → System, confirm that the optical drive is first in the boot order so setup starts from the CD.</li>
+  <li>Start the VM and begin the text-mode setup to create and format a primary partition on the virtual disk.</li>
+  <li>Choose the desired file system (typically NTFS for better reliability) when prompted.</li>
+  <li>Allow the installer to copy files, reboot, and continue into the graphical setup phase.</li>
+  <li>Follow the prompts to set your administrator password, time zone, and networking options.</li>
+  <li>After installation is complete, remove the ISO from the virtual drive so the VM boots directly into Windows NT.</li>
     </ol>
   </div>
 </fieldset>

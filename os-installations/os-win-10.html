@@ -117,8 +117,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fJfiKhfeU1E?si=aDupWIeaTOv0e6_q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -151,9 +150,18 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Windows 10"), set Type to "Microsoft Windows", and choose the Windows 10 (32-bit or 64-bit) template that matches your ISO.</li>
+  <li>Allocate at least 2 GB of RAM for 32-bit or 4 GB for 64-bit, as recommended above.</li>
+  <li>Assign at least 2 CPU cores in Settings → System → Processor for smoother performance.</li>
+  <li>Create a new VDI virtual hard disk, dynamically allocated, with a size between 50 GB and 100 GB.</li>
+  <li>Open Settings → Display, enable 3D Acceleration, and increase Video Memory to 128 MB.</li>
+  <li>In Settings → Storage, attach your Windows 10 ISO to the virtual optical drive.</li>
+  <li>Start the VM and boot from the ISO to launch the Windows 10 installer.</li>
+  <li>Choose your language and edition, accept the license, then create and format an NTFS partition on the virtual disk.</li>
+  <li>Let the installer copy files and reboot through the "Getting ready" and "Just a moment" screens.</li>
+  <li>Complete the out-of-box experience (OOBE) by creating a local account or signing in with a Microsoft account.</li>
+  <li>After reaching the desktop, eject the ISO and install VirtualBox Guest Additions for better graphics, input, and shared clipboard support.</li>
     </ol>
   </div>
 </fieldset>

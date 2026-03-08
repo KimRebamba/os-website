@@ -115,8 +115,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ac8xDOvJ0H0?si=pBUO-jkDkE0bKx-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -149,9 +148,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Windows Vista"), set Type to "Microsoft Windows", and choose the Windows Vista template that matches your ISO (32-bit or 64-bit).</li>
+  <li>Allocate at least 2 GB of RAM for a smooth experience (1 GB is an absolute minimum).</li>
+  <li>Assign 1 to 2 CPU cores under Settings → System → Processor.</li>
+  <li>Create a new VDI virtual hard disk, dynamically allocated, with a size between 20 GB and 40 GB.</li>
+  <li>Open Settings → Display and enable 3D Acceleration, then increase Video Memory to at least 128 MB.</li>
+  <li>In Settings → Storage, attach your Windows Vista ISO to the virtual optical drive.</li>
+  <li>Start the VM and boot from the ISO to launch the Windows Vista installer.</li>
+  <li>Follow the installation wizard to choose your language, accept the license, and create/format a partition (NTFS).</li>
+  <li>Allow the installer to copy files and reboot several times until the desktop appears.</li>
+  <li>After installation, remove the ISO from the virtual drive and install VirtualBox Guest Additions for better graphics and input support.</li>
     </ol>
   </div>
 </fieldset>

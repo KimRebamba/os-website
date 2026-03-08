@@ -119,7 +119,7 @@
 
 </div>
 <p class="caption mt-2">
-    Source: YouTube - How to use VirtualBox (Kevin Stratvert)
+    Source: YouTube - Installing Windows XP
   </p>
        
       </div>
@@ -150,9 +150,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Windows XP"), set Type to "Microsoft Windows", and select the "Windows XP" version template that matches your ISO (32-bit or 64-bit).</li>
+  <li>Assign between 512 MB and 1 GB of RAM so the system runs smoothly.</li>
+  <li>Create a new VDI virtual hard disk, dynamically allocated, with a size between 10 GB and 20 GB.</li>
+  <li>Open Settings → Storage and attach your Windows XP ISO file to the virtual optical drive.</li>
+  <li>Check Settings → System to ensure the VM boots from the optical drive first.</li>
+  <li>Start the VM and press any key when prompted to boot from the CD.</li>
+  <li>Use the text-mode setup to create and format a partition on the virtual disk (NTFS is recommended).</li>
+  <li>Let the installer copy files, reboot, and continue into the graphical setup phase.</li>
+  <li>Follow the on-screen steps to enter your product key, choose regional options, and create a user account.</li>
+  <li>After the desktop loads, eject the ISO and install VirtualBox Guest Additions to improve video, mouse, and clipboard integration.</li>
     </ol>
   </div>
 </fieldset>

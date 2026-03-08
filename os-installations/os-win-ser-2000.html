@@ -116,8 +116,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hr7NxLjdaSE?si=2a8asf2-ofU8SFP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -150,9 +149,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Win2000 Server"), set Type to "Microsoft Windows", and choose the "Windows 2000" version template.</li>
+  <li>Assign at least 256 MB of RAM (512 MB if you plan to install Active Directory or additional roles) and at least 1 CPU core.</li>
+  <li>Create a new VDI virtual hard disk, dynamically allocated, with a capacity between 4 GB and 12 GB.</li>
+  <li>Open Settings → Storage and attach your Windows 2000 Server ISO to the virtual optical drive.</li>
+  <li>In Settings → System, set the optical drive to the top of the boot order.</li>
+  <li>Start the VM and press any key when prompted to boot from the CD.</li>
+  <li>During text-mode setup, create and format a partition on the virtual disk (NTFS is recommended for servers).</li>
+  <li>Follow the graphical setup to configure the server name, administrator password, and basic networking.</li>
+  <li>If you want this VM to act as a domain controller, run the Active Directory installation wizard (DCPROMO) after the first login and follow the prompts.</li>
+  <li>Once the server is configured, eject the ISO from the virtual drive and take a snapshot so you can easily revert to a clean state.</li>
     </ol>
   </div>
 </fieldset>

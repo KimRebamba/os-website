@@ -115,8 +115,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r6g7yf2JtAs?si=OKaZtjRWG-JtZP7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -149,9 +148,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM (for example "Windows 2000 Pro"), set Type to "Microsoft Windows", and select the "Windows 2000" version template.</li>
+  <li>Assign between 256 MB and 512 MB of RAM and leave at least 1 CPU core enabled.</li>
+  <li>Create a new VDI virtual hard disk, dynamically allocated, with a size between 4 GB and 10 GB as recommended.</li>
+  <li>Open the VM's Settings → Storage and attach your Windows 2000 ISO file to the virtual optical drive.</li>
+  <li>In Settings → System, make sure the optical drive is first in the boot order so setup can start from the CD.</li>
+  <li>Start the VM and press any key when prompted to boot from the CD.</li>
+  <li>When the text-mode setup appears, create a new partition on the virtual disk and choose NTFS as the file system.</li>
+  <li>Let the installer format the partition, copy files, and reboot into the graphical phase of setup.</li>
+  <li>Follow the prompts to set your product key, regional options, computer name, and administrator password.</li>
+  <li>After installation finishes, eject the ISO from the virtual drive and install VirtualBox Guest Additions (if available) to improve integration.</li>
     </ol>
   </div>
 </fieldset>

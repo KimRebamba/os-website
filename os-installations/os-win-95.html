@@ -115,8 +115,7 @@
         <div class="col-md-6 my-2">
   <div class="ratio ratio-16x9">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XfNntix9aDA?si=A3naaFDn8QbFzxMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7k8g5I22sh0?si=n7HsS70x9bpTs7jr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
 <p class="caption mt-2">
     Source: YouTube - How to use VirtualBox (Kevin Stratvert)
   </p>
@@ -148,9 +147,17 @@
   
   <div class="content p-3 py-2 text">
     <ol class="fs-6">
-      <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
+      <li>Open VirtualBox and click "New" to create a new virtual machine.</li>
+  <li>Name the VM something like "Windows 95", set Type to "Microsoft Windows", and choose the closest Windows 95 or legacy Windows version available.</li>
+  <li>Assign between 32 MB and 64 MB of RAM, staying well below 512 MB to avoid memory-related boot errors.</li>
+  <li>Create a new virtual hard disk using VDI, dynamically allocated, with a size between 500 MB and 2 GB.</li>
+  <li>Open the VM's Settings → System and make sure the boot order prefers the optical drive (and/or floppy) so it can boot from your installation media.</li>
+  <li>In Settings → Storage, attach your Windows 95 ISO (or boot floppy/CD image) to the virtual optical drive.</li>
+  <li>Click "Start" to boot the VM from the installation media.</li>
+  <li>Use FDISK (if prompted) to create a primary DOS partition on the virtual disk, then restart the VM when instructed.</li>
+  <li>Format the new partition (usually as FAT16) and start the Windows 95 setup program from the CD or copied setup files.</li>
+  <li>Follow the on-screen prompts to copy files, configure regional settings, and complete the installation.</li>
+  <li>After the final reboot, detach the installation media from the VM so it boots directly from the virtual hard disk.</li>
     </ol>
   </div>
 </fieldset>
